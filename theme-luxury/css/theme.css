@@ -1,0 +1,164 @@
+/* ==========================================
+   Theme: LUXURY
+   딥 다크 + 골드 — 프리미엄 풀빌라 감성
+   ========================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap');
+
+:root {
+  --color-bg-primary:    #0d0d0d;
+  --color-bg-secondary:  #141210;
+  --color-bg-card:       #1c1916;
+  --color-accent:        #c9a96e;
+  --color-accent-hover:  #dfc08a;
+  --color-accent-line:   rgba(201, 169, 110, 0.2);
+  --color-text-primary:  #f5f0e8;
+  --color-text-secondary:#b8a898;
+  --color-text-muted:    #6b5e52;
+  --color-nav-bg:        rgba(13, 13, 13, 0.97);
+  --color-overlay:       rgba(0, 0, 0, 0.52);
+  --border-radius-card:  0px;
+  --border-radius-btn:   0px;
+  --section-padding:     var(--space-xl);
+}
+
+/* ── Body ── */
+body {
+  background: var(--color-bg-primary);
+  color: var(--color-text-primary);
+  font-family: var(--font-body);
+}
+
+/* ── Logo 스타일 ── */
+.header__logo {
+  font-weight: 200;
+  font-size: 22px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+}
+
+/* ── Nav 텍스트 (투명 배경일 때 흰색) ── */
+.header:not(.scrolled) .nav__list a { color: rgba(255,255,255,0.85); }
+.header:not(.scrolled) .btn--nav {
+  border: 1px solid var(--color-accent);
+  background: transparent;
+  color: var(--color-accent);
+}
+.header:not(.scrolled) .btn--nav:hover {
+  background: var(--color-accent);
+  color: #000;
+}
+.header:not(.scrolled) .header__hamburger span { background: #fff; }
+
+/* ── Hero — 골드 라인 데코 ── */
+.hero__title {
+  font-weight: 200;
+  letter-spacing: -0.01em;
+}
+
+.hero__sub {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.hero__sub::before, .hero__sub::after {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 1px;
+  background: var(--color-accent);
+}
+
+/* Hero CTA — 아웃라인 골드 */
+.btn--hero {
+  border: 1px solid var(--color-accent);
+  color: var(--color-accent);
+  background: transparent;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  font-size: 12px;
+  padding: 16px 44px;
+}
+.btn--hero:hover {
+  background: var(--color-accent);
+  color: #000;
+}
+
+/* ── Section divider — 골드 라인 ── */
+.section::before {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 1px;
+  background: var(--color-accent);
+  margin: 0 auto var(--space-sm);
+}
+.about::before, .rooms::before, .amenities::before,
+.location::before, .notice::before { display: none; }
+.section__header::before {
+  content: '';
+  display: block;
+  width: 32px;
+  height: 1px;
+  background: var(--color-accent);
+  margin: 0 auto var(--space-xs);
+}
+
+/* ── Room cards — 다크 배경, 골드 하이라이트 ── */
+.room-card {
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-accent-line);
+}
+.room-card:hover {
+  border-color: var(--color-accent);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+}
+.room-card__body { padding: 20px 24px 28px; }
+
+/* Slick arrows override */
+.rooms__slider .slick-prev,
+.rooms__slider .slick-next {
+  background: none;
+  border: 1px solid var(--color-accent-line);
+  color: var(--color-accent);
+  width: 44px;
+  height: 44px;
+  line-height: 44px;
+  font-size: 16px;
+  transition: all var(--transition-base);
+}
+.rooms__slider .slick-prev:hover,
+.rooms__slider .slick-next:hover {
+  border-color: var(--color-accent);
+  background: var(--color-accent);
+  color: #000;
+}
+.rooms__slider .slick-prev::before,
+.rooms__slider .slick-next::before { display: none; }
+
+/* ── Amenity items ── */
+.amenity-item { background: var(--color-bg-card); }
+
+/* ── About ── */
+.about {
+  background: var(--color-bg-secondary);
+}
+.about__content { background: var(--color-bg-secondary); }
+
+/* ── Notice ── */
+.notice__badge { border-radius: 0; }
+
+/* ── Footer ── */
+.footer {
+  background: #080806;
+  border-top: 1px solid var(--color-accent-line);
+}
+
+/* ── Gold accent line divider ── */
+.gold-divider {
+  width: 60px;
+  height: 1px;
+  background: var(--color-accent);
+  margin: var(--space-sm) auto;
+}

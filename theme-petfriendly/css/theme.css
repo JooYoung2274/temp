@@ -1,0 +1,119 @@
+/* ==========================================
+   Theme: PET FRIENDLY
+   베이지 + 포레스트 그린 — 애견 동반 펜션
+   ========================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap');
+
+:root {
+  --color-bg-primary:    #f5f0e6;
+  --color-bg-secondary:  #eaf4ea;
+  --color-bg-card:       #ffffff;
+  --color-accent:        #4a8c5c;
+  --color-accent-hover:  #3a7a4c;
+  --color-accent-line:   rgba(74, 140, 92, 0.22);
+  --color-sub:           #c17f4a;
+  --color-point:         #f4b942;
+  --color-text-primary:  #2d3b2d;
+  --color-text-secondary:#5a6e5a;
+  --color-text-muted:    #96a896;
+  --color-nav-bg:        rgba(245, 240, 230, 0.97);
+  --color-overlay:       rgba(30, 50, 30, 0.42);
+  --border-radius-card:  14px;
+  --border-radius-btn:   8px;
+  --section-padding:     var(--space-lg);
+}
+
+body {
+  background: var(--color-bg-primary);
+  color: var(--color-text-primary);
+  font-family: var(--font-body);
+}
+
+/* ── Logo — 그린 계열 ── */
+.header__logo {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 19px;
+  color: var(--color-accent);
+}
+
+/* ── Nav 투명 상태 ── */
+.header:not(.scrolled) .nav__list a { color: #fff; }
+.header:not(.scrolled) .btn--nav { background: var(--color-accent); color: #fff; }
+.header:not(.scrolled) .header__hamburger span { background: #fff; }
+
+/* ── Hero ── */
+.hero__title {
+  font-weight: 500;
+  font-size: clamp(32px, 4.5vw, 56px);
+  color: #fff;
+  text-shadow: 0 2px 20px rgba(30,50,30,0.4);
+}
+
+.hero__sub {
+  letter-spacing: 0.1em;
+  color: rgba(255,255,255,0.9);
+}
+
+.btn--hero {
+  background: var(--color-accent);
+  color: #fff;
+  border-color: var(--color-accent);
+  border-radius: var(--border-radius-btn);
+  padding: 16px 44px;
+}
+.btn--hero:hover {
+  background: var(--color-accent-hover);
+  border-color: var(--color-accent-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 28px rgba(74, 140, 92, 0.4);
+}
+
+/* ── About — 자연 이미지 강조 ── */
+.about { background: var(--color-bg-secondary); }
+.about__content { background: var(--color-bg-secondary); }
+.about__text { line-height: 2.1; }
+
+/* ── 섹션 구분 배경 교차 ── */
+.rooms { background: var(--color-bg-primary); }
+.amenities { background: var(--color-bg-secondary); }
+.notice { background: var(--color-bg-primary); }
+.location { background: var(--color-bg-secondary); }
+.pet-policy { background: var(--color-bg-primary); }
+
+/* ── Room cards ── */
+.room-card {
+  border: 1px solid rgba(74, 140, 92, 0.15);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+}
+.room-card:hover {
+  border-color: var(--color-accent);
+  box-shadow: 0 12px 40px rgba(74, 140, 92, 0.15);
+}
+
+/* ── Amenity ── */
+.amenity-item { background: #fff; box-shadow: 0 2px 16px rgba(0,0,0,0.06); }
+
+/* ── Pet Policy 섹션 특별 스타일 ── */
+.pet-policy .section__label { color: var(--color-sub); }
+.pet-policy .section__title { color: var(--color-text-primary); }
+.policy-card { border: 1px solid var(--color-accent-line); }
+.policy-card i { color: var(--color-accent); }
+
+/* 경고 카드 */
+.policy-card--warn i { color: var(--color-sub); }
+.policy-card--warn { border-color: rgba(193, 127, 74, 0.2); }
+
+/* ── Footer ── */
+.footer { background: var(--color-bg-secondary); border-top: 2px solid var(--color-accent-line); }
+.footer__logo { color: var(--color-accent); }
+
+/* ── 발바닥 데코 ── */
+.paw-accent {
+  color: var(--color-point);
+  font-size: 18px;
+}
+
+/* ── 그린 섹션 헤더 강조 ── */
+.section__title { font-weight: 500; }

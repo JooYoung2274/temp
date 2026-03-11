@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AMARA VILLA — Private Luxury Resort</title>
+  <meta name="description" content="자연 속 완벽한 프라이빗 풀빌라. 특별한 순간을 위한 럭셔리 펜션.">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Slick -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="../shared/css/reset.css">
+  <link rel="stylesheet" href="../shared/css/base.css">
+  <link rel="stylesheet" href="../shared/css/components.css">
+  <link rel="stylesheet" href="css/theme.css">
+</head>
+<body>
+
+<!-- ═══════════════════════════════
+     HEADER
+═══════════════════════════════ -->
+<header id="header" class="header">
+  <div class="container">
+    <div class="header__inner">
+      <a href="#" class="header__logo">AMARA VILLA</a>
+      <nav class="header__nav">
+        <ul class="nav__list">
+          <li><a href="#about">소개</a></li>
+          <li><a href="#rooms">객실</a></li>
+          <li><a href="#amenities">편의시설</a></li>
+          <li><a href="#location">오시는 길</a></li>
+        </ul>
+      </nav>
+      <a href="tel:010-0000-0000" class="btn btn--nav">예약 문의</a>
+      <button id="hamburgerBtn" class="header__hamburger" aria-label="메뉴">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile Nav -->
+<nav id="mobileNav" class="mobile-nav">
+  <button id="mobileNavClose" class="mobile-nav__close">
+    <i class="fa-solid fa-xmark"></i>
+  </button>
+  <a href="#about">소개</a>
+  <a href="#rooms">객실</a>
+  <a href="#amenities">편의시설</a>
+  <a href="#location">오시는 길</a>
+  <a href="tel:010-0000-0000" class="btn btn--primary" style="margin-top:16px">예약 문의</a>
+</nav>
+
+
+<!-- ═══════════════════════════════
+     HERO
+═══════════════════════════════ -->
+<section id="hero" class="hero">
+  <div class="hero__slider">
+    <div class="hero__slide" style="background-image:url('https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?w=1600&q=80')"></div>
+    <div class="hero__slide" style="background-image:url('https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=1600&q=80')"></div>
+    <div class="hero__slide" style="background-image:url('https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=1600&q=80')"></div>
+  </div>
+  <div class="hero__overlay"></div>
+  <div class="hero__content">
+    <p class="hero__sub" data-aos="fade-up">PRIVATE LUXURY VILLA</p>
+    <h1 class="hero__title" data-aos="fade-up" data-aos-delay="150">
+      완벽한 프라이빗<br>리조트 경험
+    </h1>
+    <p class="hero__desc" data-aos="fade-up" data-aos-delay="250">
+      자연 속 깊숙이 자리한 당신만의 공간.<br>
+      모든 순간이 특별해지는 럭셔리 풀빌라.
+    </p>
+    <a href="#rooms" class="btn btn--hero" data-aos="fade-up" data-aos-delay="350">
+      객실 둘러보기
+    </a>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════
+     ABOUT
+═══════════════════════════════ -->
+<section id="about" class="about section">
+  <div class="about__image" data-aos="fade-right">
+    <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=900&q=80" alt="아마라 빌라 소개">
+  </div>
+  <div class="about__content" data-aos="fade-left">
+    <span class="section__label">ABOUT US</span>
+    <h2 class="section__title">오직 당신만을 위한<br>프라이빗 공간</h2>
+    <div class="gold-divider" style="margin:20px 0;"></div>
+    <p class="about__text">
+      AMARA VILLA는 자연과 완전히 어우러진 프리미엄 프라이빗 풀빌라입니다.<br><br>
+      24시간 전용 수영장, 독립된 야외 공간, 세심하게 큐레이션된 인테리어로
+      완벽한 휴식과 특별한 경험을 선사합니다.
+    </p>
+    <a href="#rooms" class="btn btn--outline" style="margin-top:24px">객실 안내</a>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════
+     ROOMS
+═══════════════════════════════ -->
+<section id="rooms" class="rooms section">
+  <div class="container">
+    <div class="section__header" data-aos="fade-up">
+      <span class="section__label">ROOMS & VILLAS</span>
+      <h2 class="section__title">객실 안내</h2>
+    </div>
+    <div class="rooms__slider">
+
+      <div class="room-card">
+        <div class="room-card__image">
+          <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=700&q=80" alt="프리미엄 풀빌라 A">
+        </div>
+        <div class="room-card__body">
+          <h3 class="room-card__name">프리미엄 풀빌라 A</h3>
+          <p class="room-card__desc">기준 2인 / 최대 4인 · 전용풀 포함</p>
+          <span class="room-card__price">₩ 450,000 ~</span>
+          <a href="tel:010-0000-0000" class="btn btn--primary btn--sm" style="margin-top:12px">예약 문의</a>
+        </div>
+      </div>
+
+      <div class="room-card">
+        <div class="room-card__image">
+          <img src="https://images.unsplash.com/photo-1540518614846-7eded433c457?w=700&q=80" alt="럭셔리 스위트 B">
+        </div>
+        <div class="room-card__body">
+          <h3 class="room-card__name">럭셔리 스위트 B</h3>
+          <p class="room-card__desc">기준 2인 / 최대 4인 · 자쿠지 포함</p>
+          <span class="room-card__price">₩ 380,000 ~</span>
+          <a href="tel:010-0000-0000" class="btn btn--primary btn--sm" style="margin-top:12px">예약 문의</a>
+        </div>
+      </div>
+
+      <div class="room-card">
+        <div class="room-card__image">
+          <img src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?w=700&q=80" alt="디럭스 가든 C">
+        </div>
+        <div class="room-card__body">
+          <h3 class="room-card__name">디럭스 가든 C</h3>
+          <p class="room-card__desc">기준 2인 / 최대 6인 · 독립 정원</p>
+          <span class="room-card__price">₩ 520,000 ~</span>
+          <a href="tel:010-0000-0000" class="btn btn--primary btn--sm" style="margin-top:12px">예약 문의</a>
+        </div>
+      </div>
+
+      <div class="room-card">
+        <div class="room-card__image">
+          <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=700&q=80" alt="펜트하우스 스위트">
+        </div>
+        <div class="room-card__body">
+          <h3 class="room-card__name">펜트하우스 스위트</h3>
+          <p class="room-card__desc">기준 2인 / 최대 4인 · 루프탑 뷰</p>
+          <span class="room-card__price">₩ 620,000 ~</span>
+          <a href="tel:010-0000-0000" class="btn btn--primary btn--sm" style="margin-top:12px">예약 문의</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════
+     AMENITIES
+═══════════════════════════════ -->
+<section id="amenities" class="amenities section">
+  <div class="container">
+    <div class="section__header" data-aos="fade-up">
+      <span class="section__label">AMENITIES</span>
+      <h2 class="section__title">편의시설</h2>
+    </div>
+    <div class="amenities__grid">
+      <div class="amenity-item" data-aos="fade-up" data-aos-delay="0">
+        <i class="amenity-item__icon fa-solid fa-water-ladder"></i>
+        <h4 class="amenity-item__name">프라이빗 풀</h4>
+        <p class="amenity-item__desc">24시간 이용 가능한<br>전용 인피니티 풀</p>
+      </div>
+      <div class="amenity-item" data-aos="fade-up" data-aos-delay="60">
+        <i class="amenity-item__icon fa-solid fa-hot-tub-person"></i>
+        <h4 class="amenity-item__name">자쿠지 &amp; 스파</h4>
+        <p class="amenity-item__desc">실내외 자쿠지와<br>프리미엄 스파 시설</p>
+      </div>
+      <div class="amenity-item" data-aos="fade-up" data-aos-delay="120">
+        <i class="amenity-item__icon fa-solid fa-fire"></i>
+        <h4 class="amenity-item__name">바베큐 테라스</h4>
+        <p class="amenity-item__desc">전용 바베큐 그릴과<br>야외 다이닝 공간</p>
+      </div>
+      <div class="amenity-item" data-aos="fade-up" data-aos-delay="180">
+        <i class="amenity-item__icon fa-solid fa-wine-glass"></i>
+        <h4 class="amenity-item__name">와인 셀러</h4>
+        <p class="amenity-item__desc">엄선된 와인과<br>프리미엄 음료 서비스</p>
+      </div>
+      <div class="amenity-item" data-aos="fade-up" data-aos-delay="240">
+        <i class="amenity-item__icon fa-solid fa-wifi"></i>
+        <h4 class="amenity-item__name">프리미엄 Wi-Fi</h4>
+        <p class="amenity-item__desc">초고속 광인터넷<br>전 구역 완벽 커버</p>
+      </div>
+      <div class="amenity-item" data-aos="fade-up" data-aos-delay="300">
+        <i class="amenity-item__icon fa-solid fa-car"></i>
+        <h4 class="amenity-item__name">전용 주차장</h4>
+        <p class="amenity-item__desc">객실 당 2대<br>독립 주차 공간</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════
+     NOTICE
+═══════════════════════════════ -->
+<section id="notice" class="notice section">
+  <div class="container">
+    <div class="section__header" data-aos="fade-up">
+      <span class="section__label">NOTICE</span>
+      <h2 class="section__title">공지사항</h2>
+    </div>
+    <ul class="notice__list" data-aos="fade-up">
+      <li class="notice__item">
+        <span class="notice__badge">공지</span>
+        <a href="#" class="notice__title">2025 성수기 예약 안내 및 취소 정책 변경</a>
+        <span class="notice__date">2025.06.01</span>
+      </li>
+      <li class="notice__item">
+        <span class="notice__badge">안내</span>
+        <a href="#" class="notice__title">체크인 / 체크아웃 시간 안내 (15:00 / 11:00)</a>
+        <span class="notice__date">2025.05.10</span>
+      </li>
+      <li class="notice__item">
+        <span class="notice__badge">이벤트</span>
+        <a href="#" class="notice__title">평일 특가 패키지 — 50% 할인 프로모션</a>
+        <span class="notice__date">2025.04.20</span>
+      </li>
+      <li class="notice__item">
+        <span class="notice__badge">안내</span>
+        <a href="#" class="notice__title">반려동물 동반 입실 불가 안내</a>
+        <span class="notice__date">2025.03.01</span>
+      </li>
+    </ul>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════
+     LOCATION
+═══════════════════════════════ -->
+<section id="location" class="location section">
+  <div class="container">
+    <div class="location__map" data-aos="fade-right">
+      <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?w=800&q=80" alt="지도">
+    </div>
+    <div class="location__info" data-aos="fade-left">
+      <span class="section__label">LOCATION</span>
+      <h2 class="section__title">오시는 길</h2>
+      <dl class="location__detail">
+        <dt><i class="fa-solid fa-location-dot"></i> 주소</dt>
+        <dd>강원도 홍천군 서면 반곡길 000</dd>
+        <dt><i class="fa-solid fa-phone"></i> 연락처</dt>
+        <dd>010-0000-0000</dd>
+        <dt><i class="fa-solid fa-car"></i> 자가용</dt>
+        <dd>서울 → 서울양양고속도로 → 홍천 IC → 약 2시간 30분</dd>
+        <dt><i class="fa-solid fa-clock"></i> 체크인/아웃</dt>
+        <dd>체크인 15:00 / 체크아웃 11:00</dd>
+      </dl>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════
+     FOOTER
+═══════════════════════════════ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <div class="footer__logo">AMARA VILLA</div>
+      <nav class="footer__nav">
+        <a href="#">이용약관</a>
+        <a href="#">개인정보처리방침</a>
+        <a href="#">예약안내</a>
+        <a href="#">찾아오시는 길</a>
+      </nav>
+    </div>
+    <div class="footer__bottom">
+      <p class="footer__biz">
+        상호: 아마라빌라 | 대표: 홍길동 | 사업자번호: 000-00-00000<br>
+        주소: 강원도 홍천군 서면 반곡길 000 | TEL: 010-0000-0000 | E-mail: info@amaravilla.kr
+      </p>
+      <p class="footer__copy">Copyright &copy; 2025 AMARA VILLA. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- ═══════════════════════════════
+     SCRIPTS
+═══════════════════════════════ -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="../shared/js/common.js"></script>
+</body>
+</html>

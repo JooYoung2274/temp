@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>하늘빛 펜션 — 함께라서 더 좋은 여행</title>
+  <meta name="description" content="가족, 친구와 함께하는 특별한 펜션 여행. 따뜻하고 활기찬 하늘빛 펜션.">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Slick -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="../shared/css/reset.css">
+  <link rel="stylesheet" href="../shared/css/base.css">
+  <link rel="stylesheet" href="../shared/css/components.css">
+  <link rel="stylesheet" href="css/theme.css">
+</head>
+<body>
+
+<!-- ═══════════════════════════════
+     HEADER
+═══════════════════════════════ -->
+<header id="header" class="header">
+  <div class="container">
+    <div class="header__inner">
+      <a href="#" class="header__logo">하늘빛 펜션</a>
+      <nav class="header__nav">
+        <ul class="nav__list">
+          <li><a href="#about">펜션소개</a></li>
+          <li><a href="#rooms">객실안내</a></li>
+          <li><a href="#amenities">부대시설</a></li>
+          <li><a href="#location">오시는 길</a></li>
+        </ul>
+      </nav>
+      <a href="tel:010-0000-0000" class="btn btn--nav">예약하기</a>
+      <button id="hamburgerBtn" class="header__hamburger" aria-label="메뉴">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile Nav -->
+<nav id="mobileNav" class="mobile-nav">
+  <button id="mobileNavClose" class="mobile-nav__close">
+    <i class="fa-solid fa-xmark"></i>
+  </button>
+  <a href="#about">펜션소개</a>
+  <a href="#rooms">객실안내</a>
+  <a href="#amenities">부대시설</a>
+  <a href="#location">오시는 길</a>
+  <a href="tel:010-0000-0000" class="btn btn--primary" style="margin-top:16px;border-radius:50px">예약하기</a>
+</nav>
+
+
+<!-- ═══════════════════════════════
+     HERO
+═══════════════════════════════ -->
+<section id="hero" class="hero">
+  <div class="hero__slider">
+    <div class="hero__slide" style="background-image:url('https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?w=1600&q=80')"></div>
+    <div class="hero__slide" style="background-image:url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1600&q=80')"></div>
+    <div class="hero__slide" style="background-image:url('https://images.unsplash.com/photo-1471115853179-bb1d604434e0?w=1600&q=80')"></div>
+  </div>
+  <div class="hero__overlay"></div>
+  <div class="hero__content">
+    <p class="hero__sub" data-aos="fade-up">함께라서 더 특별한</p>
+    <h1 class="hero__title" data-aos="fade-up" data-aos-delay="150">
+      가족과 함께,<br>최고의 추억을 만들어요
+    </h1>
+    <p class="hero__desc" data-aos="fade-up" data-aos-delay="250">
+      아이들이 뛰어노는 소리, 바베큐 향기, 별 아래 나누는 이야기.<br>
+      하늘빛 펜션에서 잊을 수 없는 여행을 시작하세요.
+    </p>
+    <a href="#rooms" class="btn btn--hero" data-aos="fade-up" data-aos-delay="350">
+      객실 보러 가기 →
+    </a>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════
+     ABOUT
+═══════════════════════════════ -->
+<section id="about" class="about section">
+  <div class="about__image" data-aos="fade-left">
+    <img src="https://images.unsplash.com/photo-1510798831971-661eb04b3739?w=900&q=80" alt="하늘빛 펜션 전경">
+  </div>
+  <div class="about__content" data-aos="fade-right">
+    <span class="section__label">ABOUT</span>
+    <h2 class="section__title" style="font-size:30px">오신 것을 환영합니다 :)</h2>
+    <p class="about__text" style="margin-top:16px">
+      하늘빛 펜션은 강원도 청정 자연 속에 자리한 가족 친화형 펜션입니다.<br><br>
+      아이들을 위한 넓은 마당, 함께 즐기는 바베큐, 피로를 녹여주는 야외 풀까지—
+      모든 가족이 행복한 여행을 만들어 드립니다.
+    </p>
+    <div style="display:flex;gap:32px;margin-top:24px">
+      <div style="text-align:center">
+        <p style="font-family:var(--font-heading);font-size:36px;font-weight:700;color:var(--color-accent)">12</p>
+        <p style="font-size:12px;color:var(--color-text-muted);font-weight:700;letter-spacing:0.1em">객실 수</p>
+      </div>
+      <div style="text-align:center">
+        <p style="font-family:var(--font-heading);font-size:36px;font-weight:700;color:var(--color-accent)">4.9</p>
+        <p style="font-size:12px;color:var(--color-text-muted);font-weight:700;letter-spacing:0.1em">평균 평점</p>
+      </div>
+      <div style="text-align:center">
+        <p style="font-family:var(--font-heading);font-size:36px;font-weight:700;color:var(--color-accent)">5년</p>
+        <p style="font-size:12px;color:var(--color-text-muted);font-weight:700;letter-spacing:0.1em">운영 경력</p>
+      </div>
+    </div>
+    <a href="#rooms" class="btn btn--primary" style="margin-top:28px">객실 확인하기</a>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════
+     ROOMS
+═══════════════════════════════ -->
+<section id="rooms" class="rooms section">
+  <div class="container">
+    <div class="section__header" data-aos="fade-up">
+      <span class="section__label">ROOMS</span>
+      <h2 class="section__title">객실 안내</h2>
+      <p style="font-size:14px;color:var(--color-text-secondary);margin-top:8px">모든 객실에는 바베큐 시설이 포함되어 있어요</p>
+    </div>
+    <div class="rooms__slider">
+
+      <div class="room-card">
+        <div class="room-card__image">
+          <img src="https://images.unsplash.com/photo-1588880331179-bc9b93a8cb5e?w=700&q=80" alt="패밀리 룸 A">
+        </div>
+        <div class="room-card__body">
+          <h3 class="room-card__name">패밀리 룸 A동</h3>
+          <p class="room-card__desc">기준 4인 / 최대 6인 · 독립 마당</p>
+          <span class="room-card__price">₩ 180,000 ~</span>
+          <a href="tel:010-0000-0000" class="btn btn--primary btn--sm" style="margin-top:12px">예약하기</a>
+        </div>
+      </div>
+
+      <div class="room-card">
+        <div class="room-card__image">
+          <img src="https://images.unsplash.com/photo-1586105251261-72a756497a11?w=700&q=80" alt="커플 룸 B">
+        </div>
+        <div class="room-card__body">
+          <h3 class="room-card__name">커플 룸 B동</h3>
+          <p class="room-card__desc">기준 2인 / 최대 3인 · 야외 테라스</p>
+          <span class="room-card__price">₩ 130,000 ~</span>
+          <a href="tel:010-0000-0000" class="btn btn--primary btn--sm" style="margin-top:12px">예약하기</a>
+        </div>
+      </div>
+
+      <div class="room-card">
+        <div class="room-card__image">
+          <img src="https://images.unsplash.com/photo-1540518614846-7eded433c457?w=700&q=80" alt="풀옵션 C동">
+        </div>
+        <div class="room-card__body">
+          <h3 class="room-card__name">풀옵션 C동</h3>
+          <p class="room-card__desc">기준 4인 / 최대 8인 · 풀장 포함</p>
+          <span class="room-card__price">₩ 250,000 ~</span>
+          <a href="tel:010-0000-0000" class="btn btn--primary btn--sm" style="margin-top:12px">예약하기</a>
+        </div>
+      </div>
+
+      <div class="room-card">
+        <div class="room-card__image">
+          <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=700&q=80" alt="스탠다드 D동">
+        </div>
+        <div class="room-card__body">
+          <h3 class="room-card__name">스탠다드 D동</h3>
+          <p class="room-card__desc">기준 2인 / 최대 4인 · 숲속 뷰</p>
+          <span class="room-card__price">₩ 110,000 ~</span>
+          <a href="tel:010-0000-0000" class="btn btn--primary btn--sm" style="margin-top:12px">예약하기</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════
+     AMENITIES
+═══════════════════════════════ -->
+<section id="amenities" class="amenities section">
+  <div class="container">
+    <div class="section__header" data-aos="fade-up">
+      <span class="section__label">AMENITIES</span>
+      <h2 class="section__title">부대시설</h2>
+    </div>
+    <div class="amenities__grid">
+      <div class="amenity-item" data-aos="fade-up">
+        <i class="amenity-item__icon fa-solid fa-water-ladder"></i>
+        <h4 class="amenity-item__name">야외 수영장</h4>
+        <p class="amenity-item__desc">여름 시즌 오픈<br>성인·유아용 풀 분리</p>
+      </div>
+      <div class="amenity-item" data-aos="fade-up" data-aos-delay="60">
+        <i class="amenity-item__icon fa-solid fa-fire"></i>
+        <h4 class="amenity-item__name">바베큐 시설</h4>
+        <p class="amenity-item__desc">전 객실 바베큐 그릴<br>무료 제공</p>
+      </div>
+      <div class="amenity-item" data-aos="fade-up" data-aos-delay="120">
+        <i class="amenity-item__icon fa-solid fa-person-hiking"></i>
+        <h4 class="amenity-item__name">자연 트레킹</h4>
+        <p class="amenity-item__desc">펜션 주변 산책로<br>약 3km 코스</p>
+      </div>
+      <div class="amenity-item" data-aos="fade-up" data-aos-delay="180">
+        <i class="amenity-item__icon fa-solid fa-gamepad"></i>
+        <h4 class="amenity-item__name">어린이 놀이터</h4>
+        <p class="amenity-item__desc">아이들을 위한<br>안전한 놀이 공간</p>
+      </div>
+      <div class="amenity-item" data-aos="fade-up" data-aos-delay="240">
+        <i class="amenity-item__icon fa-solid fa-wifi"></i>
+        <h4 class="amenity-item__name">무료 Wi-Fi</h4>
+        <p class="amenity-item__desc">전 구역 초고속<br>무선인터넷</p>
+      </div>
+      <div class="amenity-item" data-aos="fade-up" data-aos-delay="300">
+        <i class="amenity-item__icon fa-solid fa-car"></i>
+        <h4 class="amenity-item__name">무료 주차장</h4>
+        <p class="amenity-item__desc">넓은 무료 주차장<br>항시 이용 가능</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════
+     NOTICE
+═══════════════════════════════ -->
+<section id="notice" class="notice section">
+  <div class="container">
+    <div class="section__header" data-aos="fade-up">
+      <span class="section__label">NOTICE</span>
+      <h2 class="section__title">공지사항</h2>
+    </div>
+    <ul class="notice__list" data-aos="fade-up">
+      <li class="notice__item">
+        <span class="notice__badge">공지</span>
+        <a href="#" class="notice__title">2025 여름 성수기 예약 안내 (7/1~8/31)</a>
+        <span class="notice__date">2025.06.01</span>
+      </li>
+      <li class="notice__item">
+        <span class="notice__badge">이벤트</span>
+        <a href="#" class="notice__title">가족 할인 이벤트 — 어린이 동반 시 10% 추가 할인</a>
+        <span class="notice__date">2025.05.15</span>
+      </li>
+      <li class="notice__item">
+        <span class="notice__badge">안내</span>
+        <a href="#" class="notice__title">야외 수영장 운영 시간 및 이용 규정</a>
+        <span class="notice__date">2025.05.01</span>
+      </li>
+      <li class="notice__item">
+        <span class="notice__badge">안내</span>
+        <a href="#" class="notice__title">체크인/체크아웃 안내 (입실 15:00 / 퇴실 12:00)</a>
+        <span class="notice__date">2025.03.01</span>
+      </li>
+    </ul>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════
+     LOCATION
+═══════════════════════════════ -->
+<section id="location" class="location section">
+  <div class="container">
+    <div class="location__map" data-aos="fade-right">
+      <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?w=800&q=80" alt="지도">
+    </div>
+    <div class="location__info" data-aos="fade-left">
+      <span class="section__label">LOCATION</span>
+      <h2 class="section__title">오시는 길</h2>
+      <dl class="location__detail">
+        <dt><i class="fa-solid fa-location-dot"></i> 주소</dt>
+        <dd>강원도 평창군 봉평면 흥정계곡길 000</dd>
+        <dt><i class="fa-solid fa-phone"></i> 전화</dt>
+        <dd>010-0000-0000</dd>
+        <dt><i class="fa-solid fa-car"></i> 자가용</dt>
+        <dd>서울 → 영동고속도로 → 장평 IC → 약 2시간</dd>
+        <dt><i class="fa-solid fa-clock"></i> 체크인/아웃</dt>
+        <dd>입실 15:00 / 퇴실 12:00</dd>
+      </dl>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════
+     FOOTER
+═══════════════════════════════ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <div class="footer__logo">하늘빛 펜션</div>
+      <nav class="footer__nav">
+        <a href="#">이용약관</a>
+        <a href="#">개인정보처리방침</a>
+        <a href="#">예약안내</a>
+        <a href="#">찾아오시는 길</a>
+      </nav>
+    </div>
+    <div class="footer__bottom">
+      <p class="footer__biz">
+        상호: 하늘빛펜션 | 대표: 홍길동 | 사업자번호: 000-00-00000<br>
+        주소: 강원도 평창군 봉평면 흥정계곡길 000 | TEL: 010-0000-0000
+      </p>
+      <p class="footer__copy">Copyright &copy; 2025 하늘빛 펜션. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="../shared/js/common.js"></script>
+</body>
+</html>
